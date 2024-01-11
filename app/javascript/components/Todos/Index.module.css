@@ -1,0 +1,11 @@
+.table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.completeTodo{
+  text-decoration: none;
+  font-size: 30px;
+  color: blueviolet;
+}

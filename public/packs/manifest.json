@@ -1,0 +1,44 @@
+{
+  "application.css": "/packs/css/application.css",
+  "application.js": "/packs/js/application.js",
+  "css/application.css.map": "/packs/css/application.css.map",
+  "css/server_rendering.css.map": "/packs/css/server_rendering.css.map",
+  "entrypoints": {
+    "application": {
+      "assets": {
+        "js": [
+          "/packs/js/runtime.js",
+          "/packs/js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js",
+          "/packs/js/app_javascript_components_sync_recursive_.js",
+          "/packs/js/application.js"
+        ],
+        "css": [
+          "/packs/css/application.css"
+        ]
+      }
+    },
+    "server_rendering": {
+      "assets": {
+        "js": [
+          "/packs/js/runtime.js",
+          "/packs/js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js",
+          "/packs/js/app_javascript_components_sync_recursive_.js",
+          "/packs/js/server_rendering.js"
+        ],
+        "css": [
+          "/packs/css/server_rendering.css"
+        ]
+      }
+    }
+  },
+  "js/app_javascript_components_sync_recursive_.js": "/packs/js/app_javascript_components_sync_recursive_.js",
+  "js/app_javascript_components_sync_recursive_.js.map": "/packs/js/app_javascript_components_sync_recursive_.js.map",
+  "js/application.js.map": "/packs/js/application.js.map",
+  "js/runtime.js.map": "/packs/js/runtime.js.map",
+  "js/server_rendering.js.map": "/packs/js/server_rendering.js.map",
+  "js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js": "/packs/js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js",
+  "js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js.map": "/packs/js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js.map",
+  "runtime.js": "/packs/js/runtime.js",
+  "server_rendering.css": "/packs/css/server_rendering.css",
+  "server_rendering.js": "/packs/js/server_rendering.js"
+}
