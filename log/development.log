@@ -33256,3 +33256,61 @@ Completed 500 Internal Server Error in 46ms (ActiveRecord: 9.5ms | Allocations: 
 NoMethodError (undefined method `to_ceil' for an instance of Integer):
   
 app/controllers/todos_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2024-01-11 22:06:48 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Shakapacker] Compiling...
+[Shakapacker] Compiled all packs in /home/prasad/Ruby/Ruby-Todo-List/public/packs
+[Shakapacker] assets by path js/*.js 1.98 MiB
+  asset js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB [compared for emit] (id hint: vendors) 1 related asset
+  asset js/app_javascript_components_sync_recursive_.js 29.9 KiB [compared for emit] 1 related asset
+  asset js/runtime.js 8.92 KiB [compared for emit] (name: runtime) 1 related asset
+  asset js/application.js 2.02 KiB [compared for emit] (name: application) 1 related asset
+  asset js/server_rendering.js 1.36 KiB [compared for emit] (name: server_rendering) 1 related asset
+assets by path css/*.css 1.27 KiB
+  asset css/server_rendering.css 654 bytes [compared for emit] (name: server_rendering) 1 related asset
+  asset css/application.css 649 bytes [compared for emit] (name: application) 1 related asset
+asset manifest.json 2.08 KiB [compared for emit]
+Entrypoint application 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/application.css 649 bytes js/application.js 2.02 KiB 5 auxiliary assets
+Entrypoint server_rendering 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/server_rendering.css 654 bytes js/server_rendering.js 1.36 KiB 5 auxiliary assets
+runtime modules 5.98 KiB 13 modules
+orphan modules 3.91 KiB [orphan] 3 modules
+cacheable modules 1.92 MiB (javascript) 204 bytes (css/mini-extract)
+  modules by path ./node_modules/ 1.91 MiB 28 modules
+  modules by path ./app/javascript/ 12.9 KiB (javascript) 204 bytes (css/mini-extract)
+    modules by path ./app/javascript/components/ 11.1 KiB (javascript) 204 bytes (css/mini-extract) 10 modules
+    modules by path ./app/javascript/packs/*.js 1.28 KiB 2 modules
+    modules by path ./app/javascript/utils/*.js 587 bytes 2 modules
+./app/javascript/components/ sync ^\.\/.*$ 555 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 2274 ms
+
+  Rendered layout layouts/application.html.erb (Duration: 3833.8ms | Allocations: 3232)
+Completed 200 OK in 3837ms (Views: 3836.2ms | ActiveRecord: 0.0ms | Allocations: 4100)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:06:53 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.4ms | Allocations: 4513)
+
+
+  
+NoMethodError (undefined method `to_ceil' for an instance of Float):
+  
+app/controllers/todos_controller.rb:9:in `index'
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:07:04 +0530
+Processing by TodosController#index as HTML
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 883)
+
+
+  
+NoMethodError (undefined method `to_ceil' for an instance of Float):
+  
+app/controllers/todos_controller.rb:9:in `index'
