@@ -6,7 +6,7 @@ class TodosController < ApplicationController
   def index
     per_page = params[:per_page] || 2
     page = params[:page] || 1
-    @total_pages = (Todo.count/per_page.to_i).to_ceil
+    @total_pages = (Todo.count.to_f/per_page.to_i).to_ceil
 
 
     @todos = Todo.all

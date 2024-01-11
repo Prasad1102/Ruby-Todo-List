@@ -32,6 +32,7 @@ const Index = () => {
       <Link to="/NewTodo" className={styles.newTodo}>
         New Todo
       </Link>
+
       <Link
         to="/CompleteTodo"
         className={styles.completeTodo}
@@ -39,7 +40,9 @@ const Index = () => {
       >
         Completed Todo
       </Link>
+
       <TodoTable todos={todos} setTodos={setTodos}></TodoTable>
+
       <Paginate
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}

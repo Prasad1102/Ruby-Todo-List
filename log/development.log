@@ -33233,3 +33233,26 @@ webpack 5.89.0 compiled successfully in 3628 ms
 Completed 200 OK in 5430ms (Views: 5422.8ms | ActiveRecord: 0.0ms | Allocations: 9057)
 
 
+Started GET "/" for ::1 at 2024-01-11 21:41:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 2.6ms | Allocations: 186)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3730)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 7993)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 21:41:55 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 9.5ms | Allocations: 10176)
+
+
+  
+NoMethodError (undefined method `to_ceil' for an instance of Integer):
+  
+app/controllers/todos_controller.rb:9:in `index'
