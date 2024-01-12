@@ -33314,3 +33314,1306 @@ Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 8
 NoMethodError (undefined method `to_ceil' for an instance of Float):
   
 app/controllers/todos_controller.rb:9:in `index'
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:09:12 +0530
+Processing by TodosController#index as HTML
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.html.erb:6
+  Rendered todos/_todo.html.erb (Duration: 0.4ms | Allocations: 207)
+  Rendered todos/_todo.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered todos/_todo.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered todos/index.html.erb within layouts/application (Duration: 46.6ms | Allocations: 12536)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 14295)
+Completed 200 OK in 59ms (Views: 49.1ms | ActiveRecord: 6.1ms | Allocations: 16814)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:09:16 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 1.3ms | Allocations: 86)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1933)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 2351)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:09:16 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.8ms | Allocations: 531)
+  Rendered todos/index.json.jbuilder (Duration: 8.6ms | Allocations: 1549)
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 1.7ms | Allocations: 2372)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:13:20 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.3ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 4.8ms | Allocations: 983)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 1.0ms | Allocations: 1645)
+
+
+Started GET "/todos?page=2&per_page=3" for ::1 at 2024-01-11 22:13:20 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"3"}
+  [1m[36mTodo Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.1ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 4.9ms | Allocations: 983)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.9ms | Allocations: 1644)
+
+
+Started GET "/todos?page=2&per_page=3" for ::1 at 2024-01-11 22:13:21 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"3"}
+  [1m[36mTodo Count (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 0.8ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 4.0ms | Allocations: 1024)
+Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 1.3ms | Allocations: 1690)
+
+
+Started GET "/todos?page=3&per_page=3" for ::1 at 2024-01-11 22:13:21 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"3", "per_page"=>"3"}
+  [1m[36mTodo Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 6]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [1 times] (Duration: 0.5ms | Allocations: 114)
+  Rendered todos/index.json.jbuilder (Duration: 3.7ms | Allocations: 761)
+Completed 200 OK in 14ms (Views: 4.4ms | ActiveRecord: 1.0ms | Allocations: 1432)
+
+
+Started GET "/todos?page=3&per_page=3" for ::1 at 2024-01-11 22:13:22 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"3", "per_page"=>"3"}
+Started GET "/todos?page=2&per_page=3" for ::1 at 2024-01-11 22:13:22 +0530
+  [1m[36mTodo Count (7.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 6]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [1 times] (Duration: 0.4ms | Allocations: 114)
+  Rendered todos/index.json.jbuilder (Duration: 3.1ms | Allocations: 819)
+Completed 200 OK in 14ms (Views: 3.6ms | ActiveRecord: 7.6ms | Allocations: 2512)
+
+
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"3"}
+  [1m[36mTodo Count (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 2.4ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 8.7ms | Allocations: 983)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 1.6ms | Allocations: 1644)
+
+
+Started GET "/todos?page=2&per_page=3" for ::1 at 2024-01-11 22:13:23 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"3"}
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:13:23 +0530
+  [1m[36mTodo Count (9.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/views/todos/index.json.jbuilder:2
+Processing by TodosController#index as JSON
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 2.3ms | Allocations: 280)
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  Rendered todos/index.json.jbuilder (Duration: 10.1ms | Allocations: 1298)
+Completed 200 OK in 27ms (Views: 14.9ms | ActiveRecord: 10.0ms | Allocations: 3824)
+
+
+  [1m[36mTodo Count (23.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.2ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 5.4ms | Allocations: 1092)
+Completed 200 OK in 32ms (Views: 5.6ms | ActiveRecord: 32.5ms | Allocations: 4611)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:18 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 1.3ms | Allocations: 91)
+[Shakapacker] Compiling...
+[Shakapacker] Compiled all packs in /home/prasad/Ruby/Ruby-Todo-List/public/packs
+[Shakapacker] assets by path js/*.js 1.98 MiB
+  asset js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB [compared for emit] (id hint: vendors) 1 related asset
+  asset js/app_javascript_components_sync_recursive_.js 29.9 KiB [emitted] [compared for emit] 1 related asset
+  asset js/runtime.js 8.92 KiB [compared for emit] (name: runtime) 1 related asset
+  asset js/application.js 2.02 KiB [compared for emit] (name: application) 1 related asset
+  asset js/server_rendering.js 1.36 KiB [compared for emit] (name: server_rendering) 1 related asset
+assets by path css/*.css 1.27 KiB
+  asset css/server_rendering.css 654 bytes [compared for emit] (name: server_rendering) 1 related asset
+  asset css/application.css 649 bytes [compared for emit] (name: application) 1 related asset
+asset manifest.json 2.08 KiB [compared for emit]
+Entrypoint application 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/application.css 649 bytes js/application.js 2.02 KiB 5 auxiliary assets
+Entrypoint server_rendering 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/server_rendering.css 654 bytes js/server_rendering.js 1.36 KiB 5 auxiliary assets
+runtime modules 5.98 KiB 13 modules
+orphan modules 3.91 KiB [orphan] 3 modules
+cacheable modules 1.92 MiB (javascript) 204 bytes (css/mini-extract)
+  modules by path ./node_modules/ 1.91 MiB 28 modules
+  modules by path ./app/javascript/ 12.9 KiB (javascript) 204 bytes (css/mini-extract)
+    modules by path ./app/javascript/components/ 11.1 KiB (javascript) 204 bytes (css/mini-extract) 10 modules
+    modules by path ./app/javascript/packs/*.js 1.28 KiB 2 modules
+    modules by path ./app/javascript/utils/*.js 587 bytes 2 modules
+./app/javascript/components/ sync ^\.\/.*$ 555 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 2165 ms
+
+  Rendered layout layouts/application.html.erb (Duration: 3496.6ms | Allocations: 3101)
+Completed 200 OK in 3499ms (Views: 3498.9ms | ActiveRecord: 0.0ms | Allocations: 3962)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:22 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.3ms | Allocations: 386)
+  Rendered todos/index.json.jbuilder (Duration: 10.9ms | Allocations: 4003)
+Completed 200 OK in 21ms (Views: 9.1ms | ActiveRecord: 6.0ms | Allocations: 6287)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:25 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 1989)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2272)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:25 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 0.8ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 4.4ms | Allocations: 983)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 1.9ms | Allocations: 1645)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 1997)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2280)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.0ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 3.9ms | Allocations: 983)
+Completed 200 OK in 9ms (Views: 3.6ms | ActiveRecord: 2.7ms | Allocations: 1644)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1990)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2273)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 0.7ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 3.7ms | Allocations: 983)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 2.2ms | Allocations: 1644)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1972)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2256)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 0.8ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 5.7ms | Allocations: 983)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 2.6ms | Allocations: 1644)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2005)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 2288)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.1ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 5.0ms | Allocations: 983)
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 1.7ms | Allocations: 1644)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 1.0ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1972)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 0.8ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 3.1ms | Allocations: 983)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.7ms | Allocations: 1644)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:16:55 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 1.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1966)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 2249)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:16:56 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 0.6ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 4.2ms | Allocations: 983)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 1644)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:18:14 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.5ms | Allocations: 93)
+[Shakapacker] Compiling...
+[Shakapacker] Compiled all packs in /home/prasad/Ruby/Ruby-Todo-List/public/packs
+[Shakapacker] assets by path js/*.js 1.98 MiB
+  asset js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB [compared for emit] (id hint: vendors) 1 related asset
+  asset js/app_javascript_components_sync_recursive_.js 29.9 KiB [compared for emit] 1 related asset
+  asset js/runtime.js 8.92 KiB [compared for emit] (name: runtime) 1 related asset
+  asset js/application.js 2.02 KiB [compared for emit] (name: application) 1 related asset
+  asset js/server_rendering.js 1.36 KiB [compared for emit] (name: server_rendering) 1 related asset
+assets by path css/*.css 1.27 KiB
+  asset css/server_rendering.css 654 bytes [compared for emit] (name: server_rendering) 1 related asset
+  asset css/application.css 649 bytes [compared for emit] (name: application) 1 related asset
+asset manifest.json 2.08 KiB [compared for emit]
+Entrypoint application 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/application.css 649 bytes js/application.js 2.02 KiB 5 auxiliary assets
+Entrypoint server_rendering 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/server_rendering.css 654 bytes js/server_rendering.js 1.36 KiB 5 auxiliary assets
+runtime modules 5.98 KiB 13 modules
+orphan modules 3.91 KiB [orphan] 3 modules
+cacheable modules 1.92 MiB (javascript) 204 bytes (css/mini-extract)
+  modules by path ./node_modules/ 1.91 MiB 28 modules
+  modules by path ./app/javascript/ 12.9 KiB (javascript) 204 bytes (css/mini-extract)
+    modules by path ./app/javascript/components/ 11.1 KiB (javascript) 204 bytes (css/mini-extract) 10 modules
+    modules by path ./app/javascript/packs/*.js 1.28 KiB 2 modules
+    modules by path ./app/javascript/utils/*.js 587 bytes 2 modules
+./app/javascript/components/ sync ^\.\/.*$ 555 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 2154 ms
+
+  Rendered layout layouts/application.html.erb (Duration: 3489.0ms | Allocations: 3092)
+Completed 200 OK in 3495ms (Views: 3494.7ms | ActiveRecord: 0.0ms | Allocations: 3953)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:18:18 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.4ms | Allocations: 386)
+  Rendered todos/index.json.jbuilder (Duration: 22.0ms | Allocations: 3995)
+Completed 200 OK in 33ms (Views: 22.0ms | ActiveRecord: 5.5ms | Allocations: 6183)
+
+
+Started GET "/" for ::1 at 2024-01-11 22:18:42 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.3ms | Allocations: 186)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3716)
+Completed 200 OK in 31ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 7916)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:18:43 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.5ms | Allocations: 603)
+  Rendered todos/index.json.jbuilder (Duration: 65.6ms | Allocations: 12434)
+Completed 200 OK in 116ms (Views: 62.4ms | ActiveRecord: 13.9ms | Allocations: 22717)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:18:46 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 3.1ms | Allocations: 288)
+  Rendered todos/index.json.jbuilder (Duration: 9.1ms | Allocations: 991)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 1.0ms | Allocations: 1668)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-11 22:18:48 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (4.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 1.4ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 7.4ms | Allocations: 983)
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 4.8ms | Allocations: 1657)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:05:07 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.7ms | Allocations: 803)
+  Rendered todos/index.json.jbuilder (Duration: 33.5ms | Allocations: 12776)
+Completed 200 OK in 94ms (Views: 31.8ms | ActiveRecord: 21.8ms | Allocations: 26559)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:06:43 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.3ms | Allocations: 159)
+[Shakapacker] Compiling...
+[Shakapacker] Compiled all packs in /home/prasad/Ruby/Ruby-Todo-List/public/packs
+[Shakapacker] assets by path js/*.js 1.98 MiB
+  asset js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB [compared for emit] (id hint: vendors) 1 related asset
+  asset js/app_javascript_components_sync_recursive_.js 29.9 KiB [emitted] [compared for emit] 1 related asset
+  asset js/runtime.js 8.92 KiB [compared for emit] (name: runtime) 1 related asset
+  asset js/application.js 2.02 KiB [compared for emit] (name: application) 1 related asset
+  asset js/server_rendering.js 1.36 KiB [compared for emit] (name: server_rendering) 1 related asset
+assets by path css/*.css 1.27 KiB
+  asset css/server_rendering.css 654 bytes [compared for emit] (name: server_rendering) 1 related asset
+  asset css/application.css 649 bytes [compared for emit] (name: application) 1 related asset
+asset manifest.json 2.08 KiB [compared for emit]
+Entrypoint application 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/application.css 649 bytes js/application.js 2.02 KiB 5 auxiliary assets
+Entrypoint server_rendering 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/server_rendering.css 654 bytes js/server_rendering.js 1.36 KiB 5 auxiliary assets
+runtime modules 5.98 KiB 13 modules
+orphan modules 3.91 KiB [orphan] 3 modules
+cacheable modules 1.92 MiB (javascript) 204 bytes (css/mini-extract)
+  modules by path ./node_modules/ 1.91 MiB 28 modules
+  modules by path ./app/javascript/ 12.9 KiB (javascript) 204 bytes (css/mini-extract)
+    modules by path ./app/javascript/components/ 11.1 KiB (javascript) 204 bytes (css/mini-extract) 10 modules
+    modules by path ./app/javascript/packs/*.js 1.28 KiB 2 modules
+    modules by path ./app/javascript/utils/*.js 587 bytes 2 modules
+./app/javascript/components/ sync ^\.\/.*$ 555 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 2039 ms
+
+  Rendered layout layouts/application.html.erb (Duration: 3933.1ms | Allocations: 4670)
+Completed 200 OK in 3935ms (Views: 3935.2ms | ActiveRecord: 0.0ms | Allocations: 5770)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:06:47 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 2.5ms | Allocations: 552)
+  Rendered todos/index.json.jbuilder (Duration: 14.8ms | Allocations: 4198)
+Completed 200 OK in 29ms (Views: 12.5ms | ActiveRecord: 5.3ms | Allocations: 6398)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:07:52 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.3ms | Allocations: 91)
+[Shakapacker] Compiling...
+[Shakapacker] Compiled all packs in /home/prasad/Ruby/Ruby-Todo-List/public/packs
+[Shakapacker] assets by path js/*.js 1.98 MiB
+  asset js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB [compared for emit] (id hint: vendors) 1 related asset
+  asset js/app_javascript_components_sync_recursive_.js 29.9 KiB [compared for emit] 1 related asset
+  asset js/runtime.js 8.92 KiB [compared for emit] (name: runtime) 1 related asset
+  asset js/application.js 2.02 KiB [compared for emit] (name: application) 1 related asset
+  asset js/server_rendering.js 1.36 KiB [compared for emit] (name: server_rendering) 1 related asset
+assets by path css/*.css 1.27 KiB
+  asset css/server_rendering.css 654 bytes [compared for emit] (name: server_rendering) 1 related asset
+  asset css/application.css 649 bytes [compared for emit] (name: application) 1 related asset
+asset manifest.json 2.08 KiB [compared for emit]
+Entrypoint application 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/application.css 649 bytes js/application.js 2.02 KiB 5 auxiliary assets
+Entrypoint server_rendering 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/server_rendering.css 654 bytes js/server_rendering.js 1.36 KiB 5 auxiliary assets
+runtime modules 5.98 KiB 13 modules
+orphan modules 3.91 KiB [orphan] 3 modules
+cacheable modules 1.92 MiB (javascript) 204 bytes (css/mini-extract)
+  modules by path ./node_modules/ 1.91 MiB 28 modules
+  modules by path ./app/javascript/ 12.9 KiB (javascript) 204 bytes (css/mini-extract)
+    modules by path ./app/javascript/components/ 11.1 KiB (javascript) 204 bytes (css/mini-extract) 10 modules
+    modules by path ./app/javascript/packs/*.js 1.28 KiB 2 modules
+    modules by path ./app/javascript/utils/*.js 587 bytes 2 modules
+./app/javascript/components/ sync ^\.\/.*$ 555 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 1810 ms
+
+  Rendered layout layouts/application.html.erb (Duration: 3207.1ms | Allocations: 3148)
+Completed 200 OK in 3209ms (Views: 3209.2ms | ActiveRecord: 0.0ms | Allocations: 4011)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:07:55 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (2.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 2.6ms | Allocations: 552)
+  Rendered todos/index.json.jbuilder (Duration: 22.1ms | Allocations: 4198)
+Completed 200 OK in 32ms (Views: 17.5ms | ActiveRecord: 7.3ms | Allocations: 6385)
+
+
+Started PUT "/todos/49" for ::1 at 2024-01-12 13:10:09 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>true}, "id"=>"49"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (6.8ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", true], ["updated_at", "2024-01-12 07:40:09.766048"], ["id", 49]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 1.2ms | Allocations: 157)
+  Rendered todos/show.json.jbuilder (Duration: 3.8ms | Allocations: 388)
+Completed 200 OK in 99ms (Views: 7.4ms | ActiveRecord: 9.7ms | Allocations: 18950)
+
+
+Started PUT "/todos/49" for ::1 at 2024-01-12 13:10:10 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"49"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (5.2ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:10.171153"], ["id", 49]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.5ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 1.1ms | Allocations: 180)
+Completed 200 OK in 18ms (Views: 2.2ms | ActiveRecord: 10.2ms | Allocations: 2531)
+
+
+Started PUT "/todos/45" for ::1 at 2024-01-12 13:10:11 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"45"}
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (3.0ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:11.095075"], ["id", 45]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.5ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 1.0ms | Allocations: 180)
+Completed 200 OK in 24ms (Views: 2.2ms | ActiveRecord: 6.6ms | Allocations: 2527)
+
+
+Started PUT "/todos/45" for ::1 at 2024-01-12 13:10:11 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>true}, "id"=>"45"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (3.3ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", true], ["updated_at", "2024-01-12 07:40:11.381107"], ["id", 45]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 1.3ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 3.0ms | Allocations: 180)
+Completed 200 OK in 17ms (Views: 4.2ms | ActiveRecord: 6.4ms | Allocations: 2513)
+
+
+Started PUT "/todos/45" for ::1 at 2024-01-12 13:10:12 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"45"}
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (2.9ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:12.242089"], ["id", 45]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.5ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 1.0ms | Allocations: 180)
+Completed 200 OK in 18ms (Views: 2.1ms | ActiveRecord: 6.3ms | Allocations: 2529)
+
+
+Started PUT "/todos/46" for ::1 at 2024-01-12 13:10:13 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"46"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (6.5ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:13.541221"], ["id", 46]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.4ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 0.9ms | Allocations: 180)
+Completed 200 OK in 25ms (Views: 2.0ms | ActiveRecord: 11.9ms | Allocations: 2509)
+
+
+Started PUT "/todos/44" for ::1 at 2024-01-12 13:10:14 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"44"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (2.6ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:14.680240"], ["id", 44]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.5ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 1.0ms | Allocations: 180)
+Completed 200 OK in 15ms (Views: 2.0ms | ActiveRecord: 5.6ms | Allocations: 2509)
+
+
+Started PUT "/todos/45" for ::1 at 2024-01-12 13:10:16 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>true}, "id"=>"45"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (2.7ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", true], ["updated_at", "2024-01-12 07:40:16.995801"], ["id", 45]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.4ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 0.9ms | Allocations: 180)
+Completed 200 OK in 16ms (Views: 2.4ms | ActiveRecord: 5.8ms | Allocations: 2509)
+
+
+Started PUT "/todos/49" for ::1 at 2024-01-12 13:10:17 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>true}, "id"=>"49"}
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (5.3ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", true], ["updated_at", "2024-01-12 07:40:17.676738"], ["id", 49]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.5ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 1.0ms | Allocations: 180)
+Completed 200 OK in 25ms (Views: 4.2ms | ActiveRecord: 10.4ms | Allocations: 2509)
+
+
+Started PUT "/todos/46" for ::1 at 2024-01-12 13:10:19 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>true}, "id"=>"46"}
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (4.2ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", true], ["updated_at", "2024-01-12 07:40:19.786039"], ["id", 46]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.5ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 1.2ms | Allocations: 180)
+Completed 200 OK in 19ms (Views: 2.5ms | ActiveRecord: 8.6ms | Allocations: 2509)
+
+
+Started PUT "/todos/44" for ::1 at 2024-01-12 13:10:21 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>true}, "id"=>"44"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (24.9ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", true], ["updated_at", "2024-01-12 07:40:21.175692"], ["id", 44]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.5ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 1.1ms | Allocations: 180)
+Completed 200 OK in 41ms (Views: 2.4ms | ActiveRecord: 28.0ms | Allocations: 2519)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:10:28 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (5.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (2.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 4.5ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 11.2ms | Allocations: 1205)
+Completed 200 OK in 20ms (Views: 10.2ms | ActiveRecord: 7.0ms | Allocations: 1867)
+
+
+Started PUT "/todos/49" for ::1 at 2024-01-12 13:10:30 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"49"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (2.4ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:30.786233"], ["id", 49]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 3.3ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 3.8ms | Allocations: 180)
+Completed 200 OK in 16ms (Views: 4.9ms | ActiveRecord: 3.7ms | Allocations: 2510)
+
+
+Started PUT "/todos/45" for ::1 at 2024-01-12 13:10:31 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"45"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (1.6ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:31.569516"], ["id", 45]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.4ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 0.9ms | Allocations: 180)
+Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 4.5ms | Allocations: 2509)
+
+
+Started PUT "/todos/46" for ::1 at 2024-01-12 13:10:32 +0530
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"completed"=>false}, "id"=>"46"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:71:in `set_todo'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTodo Update (2.3ms)[0m  [1m[33mUPDATE "todos" SET "completed" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["completed", false], ["updated_at", "2024-01-12 07:40:32.691035"], ["id", 46]]
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:48:in `block in update'
+  Rendering todos/show.json.jbuilder
+  Rendered todos/_todo.json.jbuilder (Duration: 0.4ms | Allocations: 80)
+  Rendered todos/show.json.jbuilder (Duration: 6.0ms | Allocations: 180)
+Completed 200 OK in 21ms (Views: 8.3ms | ActiveRecord: 5.3ms | Allocations: 2509)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:17:51 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 2.0ms | Allocations: 88)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 1997)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 2280)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:17:51 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (14.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.1ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 4.4ms | Allocations: 1314)
+Completed 200 OK in 24ms (Views: 4.6ms | ActiveRecord: 22.5ms | Allocations: 4531)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:17:51 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 1.7ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1984)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2267)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:17:51 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 0.9ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 3.4ms | Allocations: 1205)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:17:52 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 1996)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 2279)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:17:52 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.1ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 15.9ms | Allocations: 1211)
+Completed 200 OK in 23ms (Views: 16.3ms | ActiveRecord: 4.0ms | Allocations: 1873)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:17:57 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.9ms | Allocations: 88)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2007)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2291)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:17:57 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.7ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 5.4ms | Allocations: 1205)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.9ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:17:58 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 1972)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:17:59 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.1ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 6.3ms | Allocations: 1205)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 2.8ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:18:07 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 1993)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2276)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:18:07 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.8ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 3.4ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 6.0ms | Allocations: 1205)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 2.0ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:18:08 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 2.0ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1974)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 2257)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:18:08 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 2.7ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 5.3ms | Allocations: 1205)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 1.7ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:18:08 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 1986)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2269)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:18:09 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.6ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 6.6ms | Allocations: 1205)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.6ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:18:09 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 1971)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:18:09 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.1ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 5.5ms | Allocations: 1205)
+Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 2.5ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:18:10 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 89)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 1993)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 2277)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:18:10 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 3.7ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 6.2ms | Allocations: 1205)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:18:11 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1977)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2260)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:18:11 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.4ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 5.0ms | Allocations: 1205)
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 2.2ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:18:11 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 5.3ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 1980)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 2263)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:18:12 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.2ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 4.6ms | Allocations: 1205)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 1.9ms | Allocations: 1866)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:20:06 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1980)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2263)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:20:07 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 2.2ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 4.9ms | Allocations: 1205)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 1.7ms | Allocations: 1866)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:23:07 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 3.8ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 9.4ms | Allocations: 1205)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.9ms | Allocations: 1866)
+
+
+Started GET "/todos?page=2&per_page=5" for ::1 at 2024-01-12 13:23:07 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"5"}
+  [1m[36mTodo Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [2 times] (Duration: 1.1ms | Allocations: 197)
+  Rendered todos/index.json.jbuilder (Duration: 6.5ms | Allocations: 872)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.7ms | Allocations: 1535)
+
+
+Started GET "/todos?page=2&per_page=5" for ::1 at 2024-01-12 13:23:09 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"2", "per_page"=>"5"}
+  [1m[36mTodo Count (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:23:09 +0530
+  [1m[36mTodo Load (2.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 5]]
+Processing by TodosController#index as JSON
+  ↳ app/views/todos/index.json.jbuilder:2
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  Rendered collection of todos/_todo.json.jbuilder [2 times] (Duration: 1.1ms | Allocations: 197)
+  Rendered todos/index.json.jbuilder (Duration: 19.3ms | Allocations: 3197)
+Completed 200 OK in 37ms (Views: 26.1ms | ActiveRecord: 6.9ms | Allocations: 3912)
+
+
+  [1m[36mTodo Count (19.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 2.0ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 8.2ms | Allocations: 1314)
+Completed 200 OK in 34ms (Views: 11.4ms | ActiveRecord: 28.3ms | Allocations: 4913)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:23:12 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (5.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 1.7ms | Allocations: 446)
+  Rendered todos/index.json.jbuilder (Duration: 4.9ms | Allocations: 1205)
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 5.7ms | Allocations: 1866)
+
+
+Started GET "/todos?page=3&per_page=5" for ::1 at 2024-01-12 13:23:12 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"3", "per_page"=>"5"}
+  [1m[36mTodo Count (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (2.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 10]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [0 times] (Duration: 0.1ms | Allocations: 19)
+  Rendered todos/index.json.jbuilder (Duration: 4.7ms | Allocations: 635)
+Completed 200 OK in 11ms (Views: 3.6ms | ActiveRecord: 5.0ms | Allocations: 1296)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:23:19 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 1.3ms | Allocations: 89)
+[Shakapacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 1980)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 2263)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-12 13:23:19 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (1.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 3.6ms | Allocations: 280)
+  Rendered todos/index.json.jbuilder (Duration: 7.3ms | Allocations: 983)
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 4.1ms | Allocations: 1644)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:41:31 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.6ms | Allocations: 91)
+[Shakapacker] Compiling...
+[Shakapacker] Compiled all packs in /home/prasad/Ruby/Ruby-Todo-List/public/packs
+[Shakapacker] assets by path js/*.js 1.98 MiB
+  asset js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB [compared for emit] (id hint: vendors) 1 related asset
+  asset js/app_javascript_components_sync_recursive_.js 29.9 KiB [emitted] [compared for emit] 1 related asset
+  asset js/runtime.js 8.92 KiB [compared for emit] (name: runtime) 1 related asset
+  asset js/application.js 2.02 KiB [compared for emit] (name: application) 1 related asset
+  asset js/server_rendering.js 1.36 KiB [compared for emit] (name: server_rendering) 1 related asset
+assets by path css/*.css 1.27 KiB
+  asset css/server_rendering.css 654 bytes [compared for emit] (name: server_rendering) 1 related asset
+  asset css/application.css 649 bytes [compared for emit] (name: application) 1 related asset
+asset manifest.json 2.08 KiB [compared for emit]
+Entrypoint application 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/application.css 649 bytes js/application.js 2.02 KiB 5 auxiliary assets
+Entrypoint server_rendering 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/server_rendering.css 654 bytes js/server_rendering.js 1.36 KiB 5 auxiliary assets
+runtime modules 5.98 KiB 13 modules
+orphan modules 3.91 KiB [orphan] 3 modules
+cacheable modules 1.92 MiB (javascript) 204 bytes (css/mini-extract)
+  modules by path ./node_modules/ 1.91 MiB 28 modules
+  modules by path ./app/javascript/ 12.9 KiB (javascript) 204 bytes (css/mini-extract)
+    modules by path ./app/javascript/components/ 11.1 KiB (javascript) 204 bytes (css/mini-extract) 10 modules
+    modules by path ./app/javascript/packs/*.js 1.28 KiB 2 modules
+    modules by path ./app/javascript/utils/*.js 587 bytes 2 modules
+./app/javascript/components/ sync ^\.\/.*$ 555 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 1914 ms
+
+  Rendered layout layouts/application.html.erb (Duration: 3270.3ms | Allocations: 3130)
+Completed 200 OK in 3273ms (Views: 3272.5ms | ActiveRecord: 0.0ms | Allocations: 3991)
+
+
+Started GET "/todos?page=1&per_page=5" for ::1 at 2024-01-12 13:41:35 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  [1m[36mTodo Count (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [5 times] (Duration: 7.1ms | Allocations: 552)
+  Rendered todos/index.json.jbuilder (Duration: 16.0ms | Allocations: 4236)
+Completed 200 OK in 38ms (Views: 17.7ms | ActiveRecord: 9.3ms | Allocations: 8874)
+
+
+Started GET "/" for ::1 at 2024-01-12 13:41:46 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inline template within layouts/application
+  Rendered inline template within layouts/application (Duration: 0.5ms | Allocations: 89)
+[Shakapacker] Compiling...
+[Shakapacker] Compiled all packs in /home/prasad/Ruby/Ruby-Todo-List/public/packs
+[Shakapacker] assets by path js/*.js 1.98 MiB
+  asset js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB [compared for emit] (id hint: vendors) 1 related asset
+  asset js/app_javascript_components_sync_recursive_.js 29.9 KiB [emitted] [compared for emit] 1 related asset
+  asset js/runtime.js 8.92 KiB [compared for emit] (name: runtime) 1 related asset
+  asset js/application.js 2.02 KiB [compared for emit] (name: application) 1 related asset
+  asset js/server_rendering.js 1.36 KiB [compared for emit] (name: server_rendering) 1 related asset
+assets by path css/*.css 1.27 KiB
+  asset css/server_rendering.css 654 bytes [compared for emit] (name: server_rendering) 1 related asset
+  asset css/application.css 649 bytes [compared for emit] (name: application) 1 related asset
+asset manifest.json 2.08 KiB [compared for emit]
+Entrypoint application 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/application.css 649 bytes js/application.js 2.02 KiB 5 auxiliary assets
+Entrypoint server_rendering 1.98 MiB (2.27 MiB) = js/runtime.js 8.92 KiB js/vendors-node_modules_react-router-dom_dist_index_js-node_modules_react_ujs_react_ujs_index_js-79b3bb.js 1.94 MiB js/app_javascript_components_sync_recursive_.js 29.9 KiB css/server_rendering.css 654 bytes js/server_rendering.js 1.36 KiB 5 auxiliary assets
+runtime modules 5.98 KiB 13 modules
+orphan modules 3.91 KiB [orphan] 3 modules
+cacheable modules 1.92 MiB (javascript) 204 bytes (css/mini-extract)
+  modules by path ./node_modules/ 1.91 MiB 28 modules
+  modules by path ./app/javascript/ 12.9 KiB (javascript) 204 bytes (css/mini-extract)
+    modules by path ./app/javascript/components/ 11.1 KiB (javascript) 204 bytes (css/mini-extract) 10 modules
+    modules by path ./app/javascript/packs/*.js 1.28 KiB 2 modules
+    modules by path ./app/javascript/utils/*.js 587 bytes 2 modules
+./app/javascript/components/ sync ^\.\/.*$ 555 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 1985 ms
+
+  Rendered layout layouts/application.html.erb (Duration: 3455.9ms | Allocations: 3143)
+Completed 200 OK in 3459ms (Views: 3458.5ms | ActiveRecord: 0.0ms | Allocations: 4000)
+
+
+Started GET "/todos?page=1&per_page=3" for ::1 at 2024-01-12 13:41:50 +0530
+Processing by TodosController#index as JSON
+  Parameters: {"page"=>"1", "per_page"=>"3"}
+  [1m[36mTodo Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:9:in `index'
+  Rendering todos/index.json.jbuilder
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/todos/index.json.jbuilder:2
+  Rendered collection of todos/_todo.json.jbuilder [3 times] (Duration: 3.1ms | Allocations: 386)
+  Rendered todos/index.json.jbuilder (Duration: 13.7ms | Allocations: 3976)
+Completed 200 OK in 28ms (Views: 12.0ms | ActiveRecord: 7.5ms | Allocations: 6186)
+
+
