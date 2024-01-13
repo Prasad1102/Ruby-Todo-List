@@ -60,9 +60,3 @@ const Paginate = ({ currentPage, setCurrentPage, fetchTodos, todos }) => {
 };
 
 export default Paginate;
-
-// {[...Array(totalPages).keys()].map((page) => (
-//           <button key={page + 1} onClick={() => changePage(page + 1)}>
-//             {page + 1}
-//           </button>
-//         ))}
