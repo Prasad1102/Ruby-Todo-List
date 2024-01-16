@@ -409,12 +409,6 @@ const Paginate = ({
 };
 /* harmony default export */ __webpack_exports__["default"] = (Paginate);
 
-// {[...Array(totalPages).keys()].map((page) => (
-//           <button key={page + 1} onClick={() => changePage(page + 1)}>
-//             {page + 1}
-//           </button>
-//         ))}
-
 /***/ }),
 
 /***/ "./app/javascript/components/Todos/TodoTable.jsx":
