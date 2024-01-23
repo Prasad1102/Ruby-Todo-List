@@ -36,7 +36,7 @@ const EditTodo = (props) => {
             handleTodoUpdate(event);
           }}
         >
-          Edit Todo
+          Edit Todo.
         </Link>
       </form>
     </div>

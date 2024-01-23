@@ -14,7 +14,6 @@ const DashBoard = () => {
       <div>
         <Router>
           <Routes>
-            {/* Routes */}
             <Route path="/EditTodo" element={<EditTodo />} />
             <Route path="/CompleteTodo" element={<CompleteTodo />} />
             <Route path="/DisplayTodo" element={<DisplayTodo />} />
