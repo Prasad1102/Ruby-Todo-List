@@ -3,7 +3,6 @@ import * as API from "../../utils/api";
 import styles from "./Index.module.css";
 import TodoTable from "./TodoTable";
 import Paginate from "./Paginate";
-import EditTodo from "./EditTodo";
 import { Link } from "react-router-dom";
 
 const Index = () => {
