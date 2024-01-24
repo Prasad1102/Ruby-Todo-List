@@ -21,6 +21,7 @@ const DisplayTodo = (props) => {
           <p>Body: {todos.body}</p>
           <p>Created At: {todos.created_at}</p>
           <p>Updated At: {todos.updated_at}</p>
+          <p>Updated At: {todos.updated_at}</p>
         </div>
       )}
       <Link to="/">Home</Link>
