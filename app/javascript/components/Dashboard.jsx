@@ -7,8 +7,6 @@ import NewTodo from "./Todos/NewTodo";
 import CompleteTodo from "./Todos/CompleteTodo";
 
 const DashBoard = () => {
-  const [todos, setTodos] = useState([]);
-
   return (
     <>
       <div>

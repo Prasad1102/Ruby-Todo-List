@@ -41,7 +41,7 @@ const TodoTable = ({ todos, setTodos }) => {
                   Edit_{" "}
                 </Link>
                 <Link to="/DisplayTodo" state={{ todos: todo, id: todo.id }}>
-                  Display_
+                  Display
                 </Link>
                 <input
                   type="checkbox"

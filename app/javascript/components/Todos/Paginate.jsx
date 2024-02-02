@@ -15,6 +15,7 @@ const Paginate = ({ currentPage, setCurrentPage, fetchTodos, todos }) => {
 
   return (
     <>
+      {/* pagination */}
       <div>
         <button onClick={() => changePage(currentPage - 1)}>Prev</button>
         ...
