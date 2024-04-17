@@ -8,6 +8,7 @@ const DisplayTodo = (props) => {
   let { state } = useLocation();
   console.log(state);
 
+  console.log("Hekko")
   return (
     <>
       {todos && (
